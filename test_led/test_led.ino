@@ -1,6 +1,6 @@
 #include <Adafruit_NeoPixel.h>
 
-#define LED_PIN    6
+#define LED_PIN 6
 #define LED_COUNT 16
 
 Adafruit_NeoPixel ring(LED_COUNT, LED_PIN, NEO_RGBW + NEO_KHZ800);
@@ -13,7 +13,7 @@ void setup() {
 
 void loop() {
   for (int i=0; i<=16; i++) {
-    ring.setPixelColor(i, 0, 0, 0, 255);  
+    ring.setPixelColor(i, 255, 255, 255, 0);  
   }
   ring.show(); 
      
