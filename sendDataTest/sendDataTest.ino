@@ -5,7 +5,7 @@
 
 const byte numChars = 32;
 char receivedChars[numChars];
-char tempChars[numChars];        // temporary array for use when parsing
+char tempChars[numChars];        
 
 // variables to hold the parsed data
 int R = 0;
@@ -22,7 +22,7 @@ Adafruit_NeoPixel ring(LED_COUNT, LED_PIN, NEO_RGBW + NEO_KHZ800);
 void setup() {
     ring.begin();           
     ring.show();  
-    ring.setBrightness(50);
+    ring.setBrightness(50); 
     Serial.begin(9600);
     Serial.println();
 }

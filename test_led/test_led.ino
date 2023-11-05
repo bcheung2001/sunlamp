@@ -5,7 +5,11 @@
 
 const byte numChars = 3;
 char receivedChars[numChars];  
-char tempChars[numChars];       
+char tempChars[numChars];  
+
+char messageFromPC[numChars] = {0};
+int integerFromPC = 0;
+float floatFromPC = 0.0;
 
 int R = 0;
 int G = 0;
